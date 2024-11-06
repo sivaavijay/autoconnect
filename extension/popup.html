@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LinkedIn Auto-Connect</title>
+    <style>
+      /* Styling for the popup container */
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        width: 200px;
+        background-color: #f0f4f8;
+        color: #333;
+      }
+      h1 {
+        font-size: 18px;
+        margin: 0 0 10px;
+        color: #0073b1;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin: 10px 0;
+        width: 100%;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        transition: background-color 0.3s;
+      }
+      #start {
+        background-color: #28a745;
+      }
+      #start:hover {
+        background-color: #218838;
+      }
+      #stop {
+        background-color: #dc3545;
+      }
+      #stop:hover {
+        background-color: #c82333;
+      }
+      #countDisplay, #statusDisplay {
+        font-size: 16px;
+        margin-top: 15px;
+        color: #555;
+        font-weight: bold;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <h1>LinkedIn Auto-Connect</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <p id="statusDisplay">Status: Stopped</p>
+    <p id="countDisplay">Connections made: 0</p>
+    <script src="popup.js"></script>
+  </body>
+</html>
